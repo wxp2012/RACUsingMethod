@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "FirstViewController.h"
+#import "SecondViewController.h"
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -20,6 +21,8 @@
 
 - (void) viewDidLoad
 {
+    [super viewDidLoad];
+    
     self.title = [NSString stringWithFormat:@"%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleExecutableKey]];
     
     self.listArr = [NSArray array];
@@ -66,6 +69,10 @@
     if (indexPath.row == 0) {
         FirstViewController *firstVC = [[FirstViewController alloc] init];
         [self.navigationController pushViewController:firstVC animated:YES];
+    }
+    if (indexPath.row == 1) {
+        SecondViewController *secondVC = [[SecondViewController alloc] init];
+        [self.navigationController pushViewController:secondVC animated:YES];
     }
 }
 

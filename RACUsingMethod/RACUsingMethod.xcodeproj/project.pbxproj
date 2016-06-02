@@ -16,6 +16,7 @@
 		BD5A3D501CFFD46600D892BB /* RACUsingMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D4F1CFFD46600D892BB /* RACUsingMethodTests.m */; };
 		BD5A3D5B1CFFD46600D892BB /* RACUsingMethodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D5A1CFFD46600D892BB /* RACUsingMethodUITests.m */; };
 		BD5A3D6A1D000E0200D892BB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D691D000E0200D892BB /* MainViewController.m */; };
+		BD5A3D6D1D0017E100D892BB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D6C1D0017E100D892BB /* SecondViewController.m */; };
 		CAE5918DE6FE254FDF320A38 /* libPods-RACUsingMethod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C20DCCF7A3D2CBFF10E314A9 /* libPods-RACUsingMethod.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		BD5A3D5C1CFFD46600D892BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD5A3D681D000E0200D892BB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		BD5A3D691D000E0200D892BB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BD5A3D6B1D0017E100D892BB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BD5A3D6C1D0017E100D892BB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C20DCCF7A3D2CBFF10E314A9 /* libPods-RACUsingMethod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACUsingMethod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E2BB0BBCD3F730E3755493 /* Pods-RACUsingMethod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACUsingMethod.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACUsingMethod/Pods-RACUsingMethod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +135,8 @@
 				BD5A3D391CFFD46600D892BB /* AppDelegate.m */,
 				BD5A3D3B1CFFD46600D892BB /* FirstViewController.h */,
 				BD5A3D3C1CFFD46600D892BB /* FirstViewController.m */,
+				BD5A3D6B1D0017E100D892BB /* SecondViewController.h */,
+				BD5A3D6C1D0017E100D892BB /* SecondViewController.m */,
 				BD5A3D681D000E0200D892BB /* MainViewController.h */,
 				BD5A3D691D000E0200D892BB /* MainViewController.m */,
 				BD5A3D3E1CFFD46600D892BB /* Main.storyboard */,
@@ -351,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5A3D6D1D0017E100D892BB /* SecondViewController.m in Sources */,
 				BD5A3D3D1CFFD46600D892BB /* FirstViewController.m in Sources */,
 				BD5A3D3A1CFFD46600D892BB /* AppDelegate.m in Sources */,
 				BD5A3D371CFFD46600D892BB /* main.m in Sources */,
