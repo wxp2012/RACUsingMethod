@@ -8,11 +8,13 @@
 
 #import "MainViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 
 @interface MainViewController ()
 
 @property (nonatomic,strong) NSString *inputStr;
 @property (nonatomic,strong) NSString *isConnected;
+@property (nonatomic,strong) RACDisposable *loadingDispose;
 
 @end
 
@@ -104,13 +106,37 @@
                       RACObserve(self, self.isConnected)
                       ]
       reduce:^(NSString *price, NSString *name, NSNumber *connect){
-          return @(price.length > 0 && name.length > 0 && ![connect boolValue]);
+          return @(price.length > 0 && name.length > 0 && [connect boolValue]);
       }]
      subscribeNext:^(NSNumber *res){
+         NSLog(@"+++++%@",res);
          if ([res boolValue]) {
              NSLog(@"直接打印");
+             [self showLoading];
          }
      }];
+
+}
+
+- (void) showLoading
+{
+    //6、场景：用户每次在TextField中输入一个字符，1秒内没有其它输入时，去打印。TextField中字符改变触发事件已在例1中展示，这里实现一下它触法的方法，把1秒延时在此方法中实现。
+    UITextField *textF3 = [[UITextField alloc] initWithFrame:CGRectMake(20, 180, 150, 30)];
+    textF3.backgroundColor = [UIColor colorWithRed:12/255.f green:160/255.f blue:181/255.f alpha:1.0];
+    [self.view addSubview:textF3];
+    
+    [self.loadingDispose dispose];//上次信号还没处理，取消它(距离上次生成还不到1秒)
+    @weakify(self);
+    self.loadingDispose = [[[RACSignal createSignal:^RACDisposable *(id subscriber) {
+        [subscriber sendCompleted];
+        return nil;
+    }] delay:2] //延时2秒
+                           subscribeCompleted:^{
+                               @strongify(self);
+                               NSLog(@"发送一个请求");
+                               self.loadingDispose = nil;
+                               [textF3 removeFromSuperview];
+                           }];
 }
 
 //颜色转换 背景图片
