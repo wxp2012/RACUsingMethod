@@ -20,6 +20,8 @@
 
 - (void) viewDidLoad
 {
+    self.title = [NSString stringWithFormat:@"%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleExecutableKey]];
+    
     self.listArr = [NSArray array];
     self.listArr = @[@"第一个",@"第二个"];
     
