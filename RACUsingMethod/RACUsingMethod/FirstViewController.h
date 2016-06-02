@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  ViewController.h
 //  RACUsingMethod
 //
 //  Created by aipai on 16/6/2.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface FirstViewController : UIViewController
+
 
 @end
+

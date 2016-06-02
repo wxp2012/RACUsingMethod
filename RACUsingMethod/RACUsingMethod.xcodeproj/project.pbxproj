@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		BD5A3D371CFFD46600D892BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D361CFFD46600D892BB /* main.m */; };
 		BD5A3D3A1CFFD46600D892BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D391CFFD46600D892BB /* AppDelegate.m */; };
-		BD5A3D3D1CFFD46600D892BB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D3C1CFFD46600D892BB /* MainViewController.m */; };
+		BD5A3D3D1CFFD46600D892BB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D3C1CFFD46600D892BB /* FirstViewController.m */; };
 		BD5A3D401CFFD46600D892BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5A3D3E1CFFD46600D892BB /* Main.storyboard */; };
 		BD5A3D421CFFD46600D892BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5A3D411CFFD46600D892BB /* Assets.xcassets */; };
 		BD5A3D451CFFD46600D892BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5A3D431CFFD46600D892BB /* LaunchScreen.storyboard */; };
 		BD5A3D501CFFD46600D892BB /* RACUsingMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D4F1CFFD46600D892BB /* RACUsingMethodTests.m */; };
 		BD5A3D5B1CFFD46600D892BB /* RACUsingMethodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D5A1CFFD46600D892BB /* RACUsingMethodUITests.m */; };
+		BD5A3D6A1D000E0200D892BB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D691D000E0200D892BB /* MainViewController.m */; };
 		CAE5918DE6FE254FDF320A38 /* libPods-RACUsingMethod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C20DCCF7A3D2CBFF10E314A9 /* libPods-RACUsingMethod.a */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +42,8 @@
 		BD5A3D361CFFD46600D892BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD5A3D381CFFD46600D892BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD5A3D391CFFD46600D892BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BD5A3D3B1CFFD46600D892BB /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		BD5A3D3C1CFFD46600D892BB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BD5A3D3B1CFFD46600D892BB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BD5A3D3C1CFFD46600D892BB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BD5A3D3F1CFFD46600D892BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD5A3D411CFFD46600D892BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD5A3D441CFFD46600D892BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +54,8 @@
 		BD5A3D561CFFD46600D892BB /* RACUsingMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACUsingMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5A3D5A1CFFD46600D892BB /* RACUsingMethodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACUsingMethodUITests.m; sourceTree = "<group>"; };
 		BD5A3D5C1CFFD46600D892BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD5A3D681D000E0200D892BB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BD5A3D691D000E0200D892BB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C20DCCF7A3D2CBFF10E314A9 /* libPods-RACUsingMethod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACUsingMethod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E2BB0BBCD3F730E3755493 /* Pods-RACUsingMethod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACUsingMethod.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACUsingMethod/Pods-RACUsingMethod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,8 +130,10 @@
 			children = (
 				BD5A3D381CFFD46600D892BB /* AppDelegate.h */,
 				BD5A3D391CFFD46600D892BB /* AppDelegate.m */,
-				BD5A3D3B1CFFD46600D892BB /* MainViewController.h */,
-				BD5A3D3C1CFFD46600D892BB /* MainViewController.m */,
+				BD5A3D3B1CFFD46600D892BB /* FirstViewController.h */,
+				BD5A3D3C1CFFD46600D892BB /* FirstViewController.m */,
+				BD5A3D681D000E0200D892BB /* MainViewController.h */,
+				BD5A3D691D000E0200D892BB /* MainViewController.m */,
 				BD5A3D3E1CFFD46600D892BB /* Main.storyboard */,
 				BD5A3D411CFFD46600D892BB /* Assets.xcassets */,
 				BD5A3D431CFFD46600D892BB /* LaunchScreen.storyboard */,
@@ -234,6 +239,7 @@
 				TargetAttributes = {
 					BD5A3D311CFFD46600D892BB = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = AF2DUC3476;
 					};
 					BD5A3D4A1CFFD46600D892BB = {
 						CreatedOnToolsVersion = 7.2;
@@ -345,9 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5A3D3D1CFFD46600D892BB /* MainViewController.m in Sources */,
+				BD5A3D3D1CFFD46600D892BB /* FirstViewController.m in Sources */,
 				BD5A3D3A1CFFD46600D892BB /* AppDelegate.m in Sources */,
 				BD5A3D371CFFD46600D892BB /* main.m in Sources */,
+				BD5A3D6A1D000E0200D892BB /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,9 +496,10 @@
 			baseConfigurationReference = 526AC61D8DD36568DE62F39A /* Pods-RACUsingMethod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RACUsingMethod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xp.RACUsingMethod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xp.RACUsingMethod.1689755992;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -501,9 +509,10 @@
 			baseConfigurationReference = D1E2BB0BBCD3F730E3755493 /* Pods-RACUsingMethod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RACUsingMethod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xp.RACUsingMethod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xp.RACUsingMethod.1689755992;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
