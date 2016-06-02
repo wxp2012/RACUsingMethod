@@ -15,6 +15,7 @@
 		BD5A3D451CFFD46600D892BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5A3D431CFFD46600D892BB /* LaunchScreen.storyboard */; };
 		BD5A3D501CFFD46600D892BB /* RACUsingMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D4F1CFFD46600D892BB /* RACUsingMethodTests.m */; };
 		BD5A3D5B1CFFD46600D892BB /* RACUsingMethodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A3D5A1CFFD46600D892BB /* RACUsingMethodUITests.m */; };
+		CAE5918DE6FE254FDF320A38 /* libPods-RACUsingMethod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C20DCCF7A3D2CBFF10E314A9 /* libPods-RACUsingMethod.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		526AC61D8DD36568DE62F39A /* Pods-RACUsingMethod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACUsingMethod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACUsingMethod/Pods-RACUsingMethod.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5A3D321CFFD46600D892BB /* RACUsingMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACUsingMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5A3D361CFFD46600D892BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD5A3D381CFFD46600D892BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		BD5A3D561CFFD46600D892BB /* RACUsingMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACUsingMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5A3D5A1CFFD46600D892BB /* RACUsingMethodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACUsingMethodUITests.m; sourceTree = "<group>"; };
 		BD5A3D5C1CFFD46600D892BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20DCCF7A3D2CBFF10E314A9 /* libPods-RACUsingMethod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACUsingMethod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E2BB0BBCD3F730E3755493 /* Pods-RACUsingMethod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACUsingMethod.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACUsingMethod/Pods-RACUsingMethod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE5918DE6FE254FDF320A38 /* libPods-RACUsingMethod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D879C6CF86F25766F12B7B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				526AC61D8DD36568DE62F39A /* Pods-RACUsingMethod.debug.xcconfig */,
+				D1E2BB0BBCD3F730E3755493 /* Pods-RACUsingMethod.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4472096AC5C2423ACAA579CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C20DCCF7A3D2CBFF10E314A9 /* libPods-RACUsingMethod.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD5A3D291CFFD46600D892BB = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				BD5A3D4E1CFFD46600D892BB /* RACUsingMethodTests */,
 				BD5A3D591CFFD46600D892BB /* RACUsingMethodUITests */,
 				BD5A3D331CFFD46600D892BB /* Products */,
+				1D879C6CF86F25766F12B7B4 /* Pods */,
+				4472096AC5C2423ACAA579CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD5A3D5F1CFFD46600D892BB /* Build configuration list for PBXNativeTarget "RACUsingMethod" */;
 			buildPhases = (
+				C06E3CE71501471E2246B0CB /* 📦 Check Pods Manifest.lock */,
 				BD5A3D2E1CFFD46600D892BB /* Sources */,
 				BD5A3D2F1CFFD46600D892BB /* Frameworks */,
 				BD5A3D301CFFD46600D892BB /* Resources */,
+				CF9F54A3465D4187E62D1303 /* 📦 Embed Pods Frameworks */,
+				384E6680D5D6484DE525F42C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		384E6680D5D6484DE525F42C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACUsingMethod/Pods-RACUsingMethod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06E3CE71501471E2246B0CB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9F54A3465D4187E62D1303 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACUsingMethod/Pods-RACUsingMethod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD5A3D2E1CFFD46600D892BB /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		BD5A3D601CFFD46600D892BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526AC61D8DD36568DE62F39A /* Pods-RACUsingMethod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACUsingMethod/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		BD5A3D611CFFD46600D892BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1E2BB0BBCD3F730E3755493 /* Pods-RACUsingMethod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACUsingMethod/Info.plist;
@@ -498,6 +575,7 @@
 				BD5A3D611CFFD46600D892BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD5A3D621CFFD46600D892BB /* Build configuration list for PBXNativeTarget "RACUsingMethodTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				BD5A3D641CFFD46600D892BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD5A3D651CFFD46600D892BB /* Build configuration list for PBXNativeTarget "RACUsingMethodUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				BD5A3D671CFFD46600D892BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
