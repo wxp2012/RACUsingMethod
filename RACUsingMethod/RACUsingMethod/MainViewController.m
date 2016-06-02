@@ -97,6 +97,20 @@
                                        return @(price.length > 0 && name.length > 0 && [connect boolValue]);
                                    }];
     
+    //5、满足上面条件时，直接打印
+    [[RACSignal
+      combineLatest:@[textF.rac_textSignal,
+                      textF2.rac_textSignal,
+                      RACObserve(self, self.isConnected)
+                      ]
+      reduce:^(NSString *price, NSString *name, NSNumber *connect){
+          return @(price.length > 0 && name.length > 0 && ![connect boolValue]);
+      }]
+     subscribeNext:^(NSNumber *res){
+         if ([res boolValue]) {
+             NSLog(@"直接打印");
+         }
+     }];
 }
 
 //颜色转换 背景图片
